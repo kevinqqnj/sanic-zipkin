@@ -1,12 +1,19 @@
 # sanic-zipkin
-sanic plugin/extension to integrate reporting opentracing aiozipkin
+sanic plugin/extension to integrate aiozipkin (opentracing reporting)
 
 ## Features
-* Initial release
 * adding "Request span" by default
-* if Request is from another micro-service endpoint, span will be attached to that endpoint
+* if Request is from another micro-service endpoint, span will be attached (Inject/Extract) to that endpoint
 * use "logger" decorator to create span for "methods" calls
 * use "sz_rpc" method to create sub-span for RPC calls, attaching to parent span
+
+## Install and Initialize
+```
+pip install sanic-zipkin
+# app.py
+from sanic_zipkin import SanicZipkin, logger, sz_rpc
+sz = SanicZipkin(app)
+```
 
 ## Examples
 1. run `examples/servic_a.py` and `examples/service_b.py`
@@ -21,6 +28,7 @@ or
 from sanic_zipkin import SanicZipkin, logger, sz_rpc
 
 app = Sanic(__name__)
+
 # initilize plugin, default parameters:
 #        zipkin_address = 'http://127.0.0.1:9411/api/v2/spans'
 #        service = __name__

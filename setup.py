@@ -37,12 +37,10 @@ classifiers = [
     'Programming Language :: Python :: 3.5',
     'Programming Language :: Python :: 3.6',
     'Operating System :: POSIX',
-    'Development Status :: 1 - Alpha',
-    'Framework :: Sanic',
 ]
 
 
-setup(name='sanic_zipkin',
+setup(name='sanic-zipkin',
       version=read_version(),
       description=('Sanic plugin to use Distributed tracing instrumentation '
                    'for asyncio application with aiozipkin'),
@@ -51,9 +49,9 @@ setup(name='sanic_zipkin',
       platforms=['POSIX'],
       author='Kevin ZHANG Qing',
       author_email='ezhqing@gmail.com',
-      url='https://github.com/kevinqqnj/sanic_zipkin',
-      download_url='https://pypi.python.org/pypi/sanic_zipkin',
-      license='Apache 2',
+      url='https://github.com/kevinqqnj/sanic-zipkin',
+      download_url='https://pypi.python.org/pypi/sanic-zipkin',
+      license='LICENSE.txt',
       packages=find_packages(),
       install_requires=install_requires,
       extras_require=extras_require,

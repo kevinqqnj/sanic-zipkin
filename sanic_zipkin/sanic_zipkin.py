@@ -196,4 +196,4 @@ async def sz_rpc(context, url, data, method='POST'):
     else: 
         return await context.aio_session.get(url, params=data)
 
-__all__ = ['SanicZipkin', 'logger', 'sz_rpc']
+__all__ = ['sanic_zipkin', 'logger', 'sz_rpc']
