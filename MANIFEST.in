@@ -1,0 +1,5 @@
+include LICENSE
+include CHANGES.txt
+include README.md
+graft sanic-zipkin
+global-exclude *.pyc *.swp

@@ -1,0 +1,13 @@
+CHANGES
+=======
+
+
+0.1.0 (2019-01-31)
+------------------
+basic features:
+
+* Initial release
+* adding "Request span" by default
+* if Request is from another micro-service endpoint, span will be attached to that endpoint
+* use "logger" decorator to create span for "methods" calls
+* use "sz_rpc" method to create sub-span for RPC calls, attaching to parent span

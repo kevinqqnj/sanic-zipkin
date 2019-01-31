@@ -1,0 +1,4 @@
+aiohttp==3.5.4
+aiozipkin==0.5.0
+sanic==18.12.0
+Sanic-Plugins-Framework==0.6.5
